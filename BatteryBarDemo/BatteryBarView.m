@@ -37,6 +37,7 @@
 }
 
 
+/// 画电池
 - (void)drawBatteryView{
     
     CGFloat x = self.bounds.origin.x;
@@ -66,21 +67,25 @@
     self.batteryPowerLayer.path = self.batteryPowerPath.CGPath;
 }
 
+#pragma mark  ——————————设置线宽——————————
 -(void)setLineWidth:(CGFloat)lineWidth{
     _lineWidth = lineWidth;
     self.batteryBoxLayer.lineWidth = _lineWidth;
 }
 
+#pragma mark  ——————————设置线的颜色——————————
 -(void)setLineColor:(UIColor *)lineColor{
     _lineColor = lineColor;
     self.batteryBoxLayer.strokeColor = _lineColor.CGColor;
 }
 
+#pragma mark  ——————————设置电池填充色——————————
 -(void)setBatteryFillColor:(UIColor *)batteryFillColor{
     _batteryFillColor = batteryFillColor;
     self.batteryPowerLayer.fillColor = _batteryFillColor.CGColor;
 }
 
+#pragma mark  ——————————设置电池正极的背景颜色——————————
 -(void)setBatteryPlusColor:(UIColor *)batteryPlusColor{
     _batteryPlusColor = batteryPlusColor;
     self.batteryPlusLayer.strokeColor = _batteryPlusColor.CGColor;
