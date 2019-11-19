@@ -12,10 +12,8 @@
 
 /// 电池框Layer
 @property (strong, nonatomic) CAShapeLayer *batteryBoxLayer;
-
 /// 电池正极Layer
 @property (strong, nonatomic) CAShapeLayer *batteryPlusLayer;
-
 ///电量Layer
 @property (strong, nonatomic) CAShapeLayer *batteryPowerLayer;
 ///电量路径
@@ -35,7 +33,6 @@
     return self;
     
 }
-
 
 /// 画电池
 - (void)drawBatteryView{
@@ -126,7 +123,6 @@
         [self.batteryPowerLayer addAnimation:basicAnimation forKey:@"Animation"];
     }
 
-        
 }
 
 

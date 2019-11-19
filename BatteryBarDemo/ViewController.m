@@ -20,10 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    BatteryBarView *barView = [[BatteryBarView alloc]initWithFrame:CGRectMake(40.f, 60.f, 40, 20)];
-    barView.lineColor = UIColor.redColor;
-    barView.batteryFillColor = UIColor.greenColor;
-    barView.batteryPlusColor = UIColor.purpleColor;
+    BatteryBarView *barView = [[BatteryBarView alloc]initWithFrame:CGRectMake(40.f, 60.f, 36, 16)];
     [self.view addSubview:barView];
     
 }
